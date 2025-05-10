@@ -21,3 +21,4 @@
 /Users/halilcetin/Desktop/Muzikönerapp/Api/obj/Debug/net8.0/Api.dll
 /Users/halilcetin/Desktop/Muzikönerapp/Api/obj/Debug/net8.0/refint/Api.dll
 /Users/halilcetin/Desktop/Muzikönerapp/Api/obj/Debug/net8.0/Api.pdb
+/Users/halilcetin/Desktop/Muzikönerapp/Api/obj/Debug/net8.0/Api.sourcelink.json

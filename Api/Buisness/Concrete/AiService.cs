@@ -26,7 +26,7 @@ namespace Api.Buisness.Concrete
           }
    public async Task<object> GetMusicList(PromptDto model)
 {
-    string apiKey = _config["OpenRouter:ApiKey"];
+    string apiKey = Environment.GetEnvironmentVariable("OpenRouter_Key");
 
     var prompt = $"""
         Kullanıcı şu müzik tarzını ve sanatçıları verdi:

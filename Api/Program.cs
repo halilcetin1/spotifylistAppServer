@@ -1,3 +1,6 @@
+using Api.Buisness.Abasctraction;
+using Api.Buisness.Concrete;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // 1. Add Controllers
@@ -18,7 +21,8 @@ builder.Services.AddHttpClient();
 // 4. IConfiguration zaten otomatik geliyor, Swagger vb. de ekliyorsan onları da ekle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddScoped<IAiService ,AiService>();
+builder.Services.AddScoped<IFindMusicIdAndAddToList ,FindMusicIdAndAddToList>();
 var app = builder.Build();
 
 // Middleware’ler

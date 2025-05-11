@@ -19,7 +19,7 @@ namespace Api.Controllers
         }
 
         [HttpPost("run")]
-        public async Task<IActionResult> RunApp(PromptDto model){
+        public async Task<IActionResult> RunApp([FromForm]PromptDto model){
             var res=await aiService.GetMusicList(model);
             return Ok(res);
         }
